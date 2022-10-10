@@ -1,0 +1,57 @@
+body{
+	font-family: arial;
+	background: #000;
+}
+#fundo{
+	width: 440px;
+	height: 200px;
+	background: #999;
+	border: outset 5px #ccc;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	top: 50px;
+}
+#grade{
+	width: 400px;
+	height: 80px;
+	background: #fff;
+	position: relative;
+	left: 15px;
+	top: 5px;
+	border: inset 5px #333;
+}
+#escala{
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	margin-top: 20px;
+	background-image: url("../img/escala.png");
+}
+#ponteiro{
+	width: 20px;
+	height: 40px;
+	position: absolute;
+	background-image: url("../img/ponteiro.png");
+	left: 13px;
+	top: 7px;
+	/*Este parâmetro é responsável pela animação. A sintaxe é: característica a ser animada e tempo de duração da animação*/
+	transition:left 0.5s;
+}
+button{
+	padding: 0 20px;
+	background: linear-gradient(top,#a3a3a3, #000);
+	background: -moz-linear-gradient(top,#a3a3a3, #000);
+	background: -webkit-linear-gradient(top,#a3a3a3, #000);
+	box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+}
+button:hover{
+	cursor: pointer;
+	color: #fff;
+}
+button:active{
+	background: linear-gradient(bottom,#a3a3a3, #000);
+	background: -moz-linear-gradient(bottom,#a3a3a3, #000);
+	background: -webkit-linear-gradient(bottom,#a3a3a3, #000);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
