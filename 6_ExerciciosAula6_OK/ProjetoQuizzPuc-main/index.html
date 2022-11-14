@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <title>Quiz Programação | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- MODAL NAME USER -->
+    <div class="modal" id="modal">
+        <div class="modal-container">
+            <p>Insira o nome do jogador</p>
+            <input type="text" placeholder="Digite seu nome" id="nameUser">
+            <div>
+                <button onclick="init()">Iniciar Quiz</button>
+                <a href="./pages/history.html">
+                    <button>Ranking</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1 class="main-title">Quiz de programação</h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <!-- SCORE BOARD -->
+            <!-- <div id="score-container" class="hide"> -->
+            <div id="score-container" class="hide">
+                <h2>Quiz Finalizado!</h2>
+                <p id="display-score"><span></span>%</p>
+                <p>Você acertou <span id="correct-answers"></span> de <span id="questions-qty"></span> perguntas</p>
+                <button class="score-buttons" id="restart" onclick="restartQuizz()">Refazer quiz!</button>
+                <a href="./pages/history.html"><button class="score-buttons">Ranking</button></a>
+            </div>
+            <!-- QUIZZ CONTAINER -->
+            <div class="quizz-header">
+                <div class="quiz-header-flex"><span id="question-number">0</span> de <span id="questions-total">0</span></div>
+                <div class="quizz-header-timer">00:<span id="seconds">00</span></div>
+                <div class="quiz-header-flex" id="displayNameUser">-</div>
+            </div>
+            <div class="progress-bar">
+                <div id="bar"></div>
+            </div>
+            <div id="quizz-container">
+                <p id="question">
+                    <span id="question-text"></span>
+                </p>
+                <audio controls id="question-audio" class="hide">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="quizz-answers-container">
+                    <div id="answers-box">
+                        <button><span class="btn-letter">a</span> <span class="question-answer">-</span> </button>
+                        <button><span class="btn-letter">b</span> <span class="question-answer">-</span> </button>
+                        <button><span class="btn-letter">c</span> <span class="question-answer">-</span> </button>
+                        <button><span class="btn-letter">d</span> <span class="question-answer">-</span> </button>
+                    </div>
+                    <img id="question-image">
+                </div>
+            </div>
+            <!-- TEMPLATE DA RESPOSTA -->
+            <button class="answer-template hide"><span class="btn-letter">a</span> <span
+                    class="question-answer">m</span></button>
+        </div>
+    </main>
+</body>
+
+</html>

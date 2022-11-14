@@ -1,0 +1,64 @@
+.back_button {
+  padding: .5rem 1rem;
+  background-color: var(--blue-900);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 4px;
+}
+
+.back_button:hover {
+  background-color: var(--orange-700);
+}
+
+.table-container {
+  width: 50%;
+  margin-top: 1rem;
+  background-color: var(--blue-50);
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  border-collapse: separate;
+  margin-bottom: 2rem;
+}
+
+.table-container th {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.35rem;
+  padding: 0 1rem;
+}
+
+.table-container th,
+.table-container td {
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.table-container td {
+  padding: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: var(--blue-900);
+  font-size: 1.2rem;
+}
+
+/*  RESPONSIVO */
+@media(max-width: 450px) {
+  body {
+    font-size: 14px;
+  }
+
+  .table-container th {
+    font-size: 0.7rem;
+    padding: 0 0.5rem;
+  }
+
+  .table-container th:nth-child(2) {
+    padding: 0 1.1rem;
+  }
+
+  .table-container td {
+    font-size: 0.6rem;
+    padding: 0.2rem;
+  }
+}
