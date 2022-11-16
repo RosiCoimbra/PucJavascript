@@ -20,4 +20,4 @@ function request(url, verbo = 'GET') {
     });
 }
 
-request('https://jsonplaceholder.typicode.com')
+request('https://jsonplaceholder.typicode.com');
