@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+div {
+    text-align: center;
+}
+
+button {
+    height: 2.2em;
+    width: 5.5em;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.start-btn {
+    background-color: green;
+}
+
+.pause-btn {
+    background-color: red;
+}
+
+.stop-btn {
+    background-color: blue;
+}
